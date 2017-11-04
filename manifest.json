@@ -1,0 +1,16 @@
+{
+	"name": "CSIEC自动填词",
+	"version": "1.0.0",
+	"manifest_version": 2,
+	"description" : "CSIEC自动填词",
+	"browser_action": {
+		"default_icon"  : "favicon.png",
+		"default_title" : "CSIEC自动填词"
+	},
+	"content_scripts": [
+		{
+			"matches" : ["http://class.csiec.com/mod/quiz/*"],
+			"js"      : ["csiec.js"]
+		}
+	]
+}
